@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Contatos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./Agenda de contatos logo.png.png" alt="logo agenda">
+            <h1>Agenda de Contatos</h1>
+        </header>
+            <form id="contactForm">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="phone">Telefone:</label>
+                <input type="text" id="phone" placeholder="(99) 99999-9999" name="phone" >
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submitButton">Inserir novo contato</button>
+            </form>
+            <table id="contactTable" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Telefone</th>
+                        <th>E-mail</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>João da Silva</td>
+                        <td>(99) 99999-9999</td>
+                        <td>joaodasilva@joaodasilva.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <script src="main.js"></script>
+</body>
+</html>
